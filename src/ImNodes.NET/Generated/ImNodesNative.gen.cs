@@ -7,6 +7,10 @@ namespace imnodesNET
 {
     public static unsafe partial class imnodesNative
     {
+        // added by nora. sorry
+        [DllImport("cimnodes", CallingConvention = CallingConvention.Cdecl)]
+        public static extern void imnodes_SetCurrentContext(IntPtr ctx);
+
         [DllImport("cimnodes", CallingConvention = CallingConvention.Cdecl)]
         public static extern void EmulateThreeButtonMouse_destroy(EmulateThreeButtonMouse* self);
         [DllImport("cimnodes", CallingConvention = CallingConvention.Cdecl)]
