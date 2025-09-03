@@ -79,7 +79,7 @@ namespace imnodesNET
         public static extern byte imnodes_IsAttributeActive();
         [DllImport("cimnodes", CallingConvention = CallingConvention.Cdecl)]
         public static extern byte imnodes_IsEditorHovered();
-        [DllImport("cimnodes", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("cimnodes", CallingConvention = CallingConvention.Cdecl, EntryPoint = "imnodes_IsLinkCreated_BoolPtr")]
         public static extern byte imnodes_IsLinkCreatedBoolPtr(int* started_at_attribute_id, int* ended_at_attribute_id, byte* created_from_snap);
         [DllImport("cimnodes", CallingConvention = CallingConvention.Cdecl)]
         public static extern byte imnodes_IsLinkCreatedIntPtr(int* started_at_node_id, int* started_at_attribute_id, int* ended_at_node_id, int* ended_at_attribute_id, byte* created_from_snap);
