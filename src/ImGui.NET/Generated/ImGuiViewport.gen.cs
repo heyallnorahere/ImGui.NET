@@ -11,6 +11,7 @@ namespace ImGuiNET
         public ImGuiViewportFlags Flags;
         public Vector2 Pos;
         public Vector2 Size;
+        public Vector2 FramebufferScale;
         public Vector2 WorkPos;
         public Vector2 WorkSize;
         public float DpiScale;

@@ -252,7 +252,7 @@ namespace ImGuiNET
         public static extern uint igGetID_Ptr(void* ptr_id);
         [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
         public static extern uint igGetID_Int(int int_id);
-        [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl, EntryPoint = "igGetIO_Nil")]
         public static extern ImGuiIO* igGetIO();
         [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
         public static extern uint igGetItemID();
@@ -278,7 +278,7 @@ namespace ImGuiNET
         public static extern void igGetMousePos(Vector2* pOut);
         [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
         public static extern void igGetMousePosOnOpeningCurrentPopup(Vector2* pOut);
-        [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl, EntryPoint = "igGetPlatformIO_Nil")]
         public static extern ImGuiPlatformIO* igGetPlatformIO();
         [DllImport("cimgui", CallingConvention = CallingConvention.Cdecl)]
         public static extern float igGetScrollMaxX();
